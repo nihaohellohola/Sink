@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     redirectStatusCode: '301',
     linkCacheTtl: 60,
     redirectWithQuery: false,
-    homeURL: '',
+    homeURL: 'https://www.19.st',
     cfAccountId: '',
     cfApiToken: '',
     dataset: 'sink',
@@ -35,7 +35,7 @@ export default defineNuxtConfig({
     disableBotAccessLog: false,
     public: {
       previewMode: '',
-      slugDefaultLength: '6',
+      slugDefaultLength: '3',
     },
   },
 
