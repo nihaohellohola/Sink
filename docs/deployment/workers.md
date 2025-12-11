@@ -1,6 +1,6 @@
 # Deployment on Cloudflare Workers
 
-1. [Fork](https://github.com/ccbikai/Sink/fork) the repository to your GitHub account.
+1. [Fork](https://github.com/miantiao-me/Sink/fork) the repository to your GitHub account.
 2. Create a [KV namespace](https://developers.cloudflare.com/kv/) (under **Storage & Databases** -> **KV**), and copy the namespace ID.
 3. Update the `kv_namespaces` ID in `wrangler.jsonc` with your own namespace ID.
 4. Create a project in [Cloudflare Workers](https://developers.cloudflare.com/workers/).
