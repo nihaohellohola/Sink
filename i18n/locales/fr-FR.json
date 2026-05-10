@@ -88,23 +88,23 @@
       },
       "customizable_slug": {
         "title": "Slug personnalisable",
-        "description": "Prise en charge des slugs personnalisés et de la sensibilité à la casse"
+        "description": "Prise en charge des slugs personnalisés, des paramètres UTM et de la casse"
       },
       "ai_slug": {
-        "title": "Slug IA",
-        "description": "Utilisez l'IA pour créer des slugs"
+        "title": "Assistance IA",
+        "description": "Générez des slugs et métadonnées OpenGraph depuis le contenu des pages"
       },
       "link_expiration": {
-        "title": "Expiration des liens",
-        "description": "Définissez des dates d'expiration pour vos liens"
+        "title": "Contrôle des liens",
+        "description": "Définissez expirations, mots de passe et alertes de liens dangereux"
       },
       "device_routing": {
-        "title": "Routage par appareil",
-        "description": "Redirigez les utilisateurs iOS/Android vers les stores d'apps"
+        "title": "Routage intelligent",
+        "description": "Redirigez les visiteurs selon l'appareil ou le pays"
       },
       "og_preview": {
         "title": "Aperçu social",
-        "description": "Aperçus OpenGraph personnalisés pour les réseaux sociaux"
+        "description": "Personnalisez les aperçus avec titres, descriptions et images"
       },
       "realtime_analytics": {
         "title": "Analyses en temps réel",
@@ -116,11 +116,11 @@
       },
       "import_export": {
         "title": "Import/Export",
-        "description": "Migration en masse via fichiers JSON"
+        "description": "Migration de liens via JSON et export analytics via CSV"
       },
       "multi_language": {
         "title": "Multilingue",
-        "description": "Support i18n complet pour le tableau de bord"
+        "description": "Support i18n complet pour le tableau de bord et les pages de redirection"
       }
     },
     "cta": {
@@ -249,6 +249,13 @@
       "og_description": "Description",
       "og_description_placeholder": "Description du lien",
       "og_image": "Image",
+      "geo_routing": "Routage géographique",
+      "add_geo_route": "Ajouter une route géographique",
+      "country_code": "Code pays (par ex. FR)",
+      "select_country": "Sélectionner un pays",
+      "search_country": "Rechercher un pays...",
+      "no_country_found": "Aucun pays trouvé.",
+      "find_country_code": "Trouver votre code pays",
       "advanced": "Avancé",
       "more_options": "Plus d'options",
       "image_invalid_type": "Veuillez télécharger un fichier image",
@@ -269,7 +276,8 @@
       "utm_content": "Contenu UTM",
       "utm_apply": "Appliquer",
       "utm_clear": "Effacer",
-      "utm_invalid_url": "Saisissez une URL valide pour prévisualiser et appliquer les paramètres UTM."
+      "utm_invalid_url": "Saisissez une URL valide pour prévisualiser et appliquer les paramètres UTM.",
+      "ai_og_generate": "Générer l'OpenGraph IA"
     },
     "sort": {
       "newest": "Les plus récents",
@@ -280,9 +288,22 @@
     },
     "update_failed": "Échec de la mise à jour du lien",
     "create_failed": "Échec de la création du lien",
-    "ai_slug_failed": "Échec de la génération du slug IA"
+    "ai_slug_failed": "Échec de la génération du slug IA",
+    "ai_og_failed": "Échec de la génération de l'OpenGraph IA",
+    "ai_og_success": "OpenGraph IA généré avec succès"
   },
   "migrate": {
+    "access_export": {
+      "title": "Export Access Data",
+      "description": "Download access statistics as a CSV file",
+      "date_range": "Date Range",
+      "slug_label": "Slug Filter",
+      "slug_description": "Leave empty to export all slugs.",
+      "button": "Export CSV",
+      "exporting": "Exporting...",
+      "success": "Export successful",
+      "failed": "Export failed"
+    },
     "backup": {
       "title": "Sauvegarde manuelle",
       "description": "Déclenchez une sauvegarde manuelle de tous les liens vers le bucket R2 configuré",
