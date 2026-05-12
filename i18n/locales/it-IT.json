@@ -54,6 +54,7 @@
     "links": "Link",
     "analysis": "Analisi",
     "realtime": "In Tempo Reale",
+    "check": "Check",
     "migrate": "Importa/Esporta"
   },
   "sidebar": {
@@ -229,6 +230,7 @@
       "slug": "Slug",
       "comment": "Commento",
       "expiration": "Scadenza",
+      "expiration_description": "Il link breve viene eliminato automaticamente dopo la scadenza.",
       "pick_date": "Scegli una data",
       "device_redirect": "Reindirizzamento Dispositivo",
       "google_play": "URL Google Play",
@@ -249,8 +251,8 @@
       "og_description": "Descrizione",
       "og_description_placeholder": "Descrizione del link",
       "og_image": "Immagine",
-      "geo_routing": "Routing Geografico",
-      "add_geo_route": "Aggiungi Rotta Geografica",
+      "geo_routing": "Reindirizzamento geografico",
+      "add_geo_route": "Aggiungi reindirizzamento geografico",
       "country_code": "Codice Paese (es. IT)",
       "select_country": "Seleziona paese",
       "search_country": "Cerca paese...",
@@ -291,6 +293,73 @@
     "ai_slug_failed": "Generazione slug IA fallita",
     "ai_og_failed": "Impossibile generare l'OpenGraph AI",
     "ai_og_success": "OpenGraph AI generato con successo"
+  },
+  "check": {
+    "title": "Link Check",
+    "description": "Check whether existing destination URLs are reachable. Results are displayed only and will not modify links.",
+    "config": {
+      "timeout": "Timeout (seconds)",
+      "timeout_description": "Timeout for each link. Default is 6 seconds.",
+      "batch_size": "Batch size",
+      "batch_size_description": "Links checked per request. Maximum is 10."
+    },
+    "actions": {
+      "start": "Start Check",
+      "checking": "Checking...",
+      "stop": "Stop",
+      "reload": "Reload Links",
+      "loading": "Loading...",
+      "clear": "Clear Results",
+      "export": "Export CSV",
+      "detail": "Detail",
+      "original": "Original"
+    },
+    "stats": {
+      "total": "Total",
+      "checked": "Checked",
+      "normal": "Normal",
+      "abnormal": "Abnormal",
+      "network_error": "Network Error"
+    },
+    "progress": {
+      "title": "Progress",
+      "description": "{checked} of {total} links checked",
+      "stopped": "Check stopped"
+    },
+    "results": {
+      "title": "Results",
+      "description": "Abnormal results are shown by default. Use tabs to filter by status code."
+    },
+    "tabs": {
+      "abnormal": "Abnormal ({count})",
+      "status": "{status} ({count})",
+      "all": "All ({count})"
+    },
+    "table": {
+      "slug": "Slug",
+      "url": "URL",
+      "status": "Status",
+      "result": "Result",
+      "duration": "Duration",
+      "error": "Error",
+      "action": "Action"
+    },
+    "result": {
+      "normal": "Normal",
+      "broken": "Broken",
+      "network_error": "Network Error"
+    },
+    "empty": {
+      "not_started": "No results yet.",
+      "no_broken_links": "No broken links found.",
+      "no_matching_results": "No matching results."
+    },
+    "messages": {
+      "load_failed": "Failed to load links",
+      "completed": "Link check completed",
+      "stopped": "Link check stopped"
+    },
+    "duration_ms": "{duration} ms"
   },
   "migrate": {
     "access_export": {

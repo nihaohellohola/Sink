@@ -12,21 +12,19 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <Field>
-    <div class="flex items-center justify-between">
-      <div class="space-y-0.5">
-        <FieldLabel :for="id">
-          {{ label }}
-        </FieldLabel>
-        <p v-if="description" class="text-xs text-muted-foreground">
-          {{ description }}
-        </p>
-      </div>
-      <Switch
-        :id="id"
-        :model-value="modelValue"
-        @update:model-value="emit('update:modelValue', $event)"
-      />
-    </div>
+  <Field orientation="horizontal">
+    <FieldContent>
+      <FieldLabel :for="id">
+        {{ label }}
+      </FieldLabel>
+      <FieldDescription v-if="description" class="text-xs">
+        {{ description }}
+      </FieldDescription>
+    </FieldContent>
+    <Switch
+      :id="id"
+      :model-value="modelValue"
+      @update:model-value="emit('update:modelValue', $event)"
+    />
   </Field>
 </template>
